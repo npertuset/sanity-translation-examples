@@ -81,13 +81,11 @@ This mode is enabled in the schema via the `i18n` property
 
 ```js
 // Global config object for document translations. Customize as needed on a document basis.
-import { i18n } from "../documentTranslation";
 
 export default {
   title: "Post",
   name: "post",
   type: "document",
-  i18n, // Enables the document level translations
   fields: [
     {
       title: "Title",

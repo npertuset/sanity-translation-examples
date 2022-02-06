@@ -26,6 +26,16 @@ export default {
       name: 'title',
     },
     {
+      title: 'Date',
+      type: 'date',
+      name: 'date',
+      localize: false
+    },
+    {
+      type: 'string',
+      name: 'titlev2',
+    },
+    {
       title: 'Slug',
       name: 'slug',
       type: 'slug',
@@ -43,6 +53,7 @@ export default {
     {
       type: 'image',
       name: 'image',
+      localize: false,
       options: {
         hotspot: true
       }
@@ -52,22 +63,14 @@ export default {
       name: 'body'
     },
     {
+      type: 'richText',
+      name: 'excerpt'
+    },
+    {
       type: 'reference',
       name: 'author',
       to: [{ type: 'author' }]
     },
-    {
-      type: 'array',
-      name: 'authors',
-      // We probably don't want localized versions of this reference array, so
-      // we opt out of localizing this specific field
-      localize: false,
-      of: [
-        {
-          type: 'reference',
-          to: [{ type: 'author' }]
-        }
-      ]
-    }
+    
   ]
 }

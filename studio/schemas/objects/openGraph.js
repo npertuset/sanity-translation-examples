@@ -22,7 +22,8 @@ export default {
       title: 'og:image',
       name: 'image',
       description: 'In your frontend you should make use of the asset URL',
-      type: 'image'
+      type: 'image',
+      localize: false
     }
   ]
 }
